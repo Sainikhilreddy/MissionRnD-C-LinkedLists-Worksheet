@@ -26,6 +26,10 @@ Objectives of C-LinkedLists-1 Lesson:
 #include <stdio.h>
 #include "FunctionHeadersLinkedLists1.h"
 
+struct node {
+	int num;
+	struct node *next;
+};
 int main(){
 
 	//Test 012SortSll
@@ -38,5 +42,8 @@ int main(){
 
 	//Test twodigitLinkedList
 
+	struct node *p = numberToLinkedList(12345678), *q;
+	//q = removeEveryKthNode(p, 2);
+	
 	return 0;
 }
